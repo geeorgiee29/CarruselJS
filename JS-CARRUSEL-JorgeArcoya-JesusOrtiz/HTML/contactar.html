@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Contactame">
+        <meta name="keywords" content="contactar, nombre, correo, ubicacion">
+        <meta name="author" content="Jorge Arcoya">
+        <link rel="shortcut icon" href="../imagenes/3315785.png">
+        <title>Contactame</title>
+        <link rel="stylesheet" href="../CSS/basicas.css">
+        <link rel="stylesheet" href="../CSS/estados.css">
+        <link rel="stylesheet" href="../CSS/layout.css">
+        <link rel="stylesheet" href="../CSS/modulos.css">
+    </head>
+    <body class="contactar">
+    <div class="contenido">    
+        <header>
+        
+            <nav class="navbar">
+                <div class="logonav">Programming</div>
+                <ul class="nav-list">
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="../HTML/servicio.html">Los servicios que ofrezco</a></li>
+                  <li><a href="../HTML/empresa.html">Sobre mi empresa</a></li>
+                  <li><a target="_blank" href="https://apliweb2smr.blogspot.com"">Mi Blog</a></li>
+                  <li><a href="../HTML/contactar.html">Contactame</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="contenido">  
+        
+            <div class="contenedor">
+                <div class="formulario">
+                    <h2 class="contacto">Contacto</h2>
+                    <form>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Introduzca su nombre" minlength="1" maxlength="25" required pattern="[A-Za-z]+">
+              
+                        <label for="nombre">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required placeholder="Introduzca su apellido" minlength="1" maxlength="25" required pattern="[A-Za-z]+">
+              
+                        <label for="nombre">De donde eres:</label>
+                        <select>
+                            <option>España</option>
+                            <option>Portugal</option>
+                            <option>Francia</option>
+                            <option>Inglaterra</option>
+                            <option>Otro</option>
+                        </select>
+                
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@gmail.com" required>
+                
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escriba aquí sus dudas"></textarea>
+                
+                        <button type="submit">Enviar</button><br>
+                        <button type="reset">Borrar</button>
+                    </form>
+                </div>   
+            </div>
+
+            <div class="mapa">
+                <div align = center>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3087.3909677245406!2d-3.6038671886930254!3d37.18977657202239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcdd576816a5%3A0x6fd019c90787154f!2sC.%20%C3%81lvaro%20Aparicio%2C%2023%2C%2018012%20Granada!5e1!3m2!1ses!2ses!4v1700829100997!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div align="center">
+                        <p><b>Programming</b></p>
+                        <p><b>C. Álvaro Aparicio, 23</b></p>
+                        <p><b>Granada - Andalucía - España</b></p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 Programming - All rights reserved</p>
+        </footer>
+    </body>
+</html>

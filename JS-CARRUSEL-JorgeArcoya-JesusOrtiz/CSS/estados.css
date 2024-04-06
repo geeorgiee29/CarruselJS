@@ -1,0 +1,124 @@
+/* Subrayar el texto al pasar el raton sobre los párrafos dentro de .footer */
+.footer p:hover {
+  text-decoration: underline;
+}
+
+/* Cambiar el color del texto al pasar el raton sobre los enlaces dentro de .nav-list */
+.nav-list li a:hover {
+  color: #18c8ce;
+}
+
+/* Aumentar el tamaño la imagen al pasar el raton sobre el contenedor con clase .icono-social */
+.icono-social:hover img {
+  transform: scale(1.2);
+}
+
+/* Cambiar el color de fondo al pasar el raton sobre los botones */
+button:hover {
+  background-color: #555;
+}
+
+/* Cambiar el borde al pasar el raton sobre los selectores */
+select:hover {
+  border: 1px solid #1cd9bd;
+}
+
+/* Cambiar el borde al pasar el raton sobre los campos de entrada */
+input:hover {
+  border: 1px solid #1cd9bd;
+}
+
+/* Cambiar el borde al pasar el raton sobre las áreas de texto */
+textarea:hover {
+  border: 1px solid #1cd9bd;
+}
+
+/* Cambiar el color del texto al pasar el raton sobre el elemento con ID #Servicio */
+#Servicio:hover {
+  color: #d84117;
+}
+
+/* Cambiar el estilo de varios atributos al pasar el raton sobre el elemento con clase .volver */
+.volver:hover {
+  text-decoration: none;
+  background-color:lightskyblue;
+}
+
+/* Da color al link antes de ser pulsado */
+.volver:link{
+  color:mediumpurple;
+  text-decoration: none;
+}
+
+/* Estilo que da color al link y fondo de color despues de ser visitado */
+.volver:visited{
+  background-color:navajowhite;
+  color:cornflowerblue;
+}
+
+/* Cambiar el color del texto al pasar el raton sobre el elemento con ID #Lenguajes */
+#Lenguajes:hover {
+  color: #d84117;
+}
+
+/* Cambiar el color del texto al pasar el raton sobre el elemento con ID #Proyectos */
+#Proyectos:hover {
+  color: #d84117;
+}
+
+/* Aumentar el tamaño al pasar el raton sobre el elemento con clase .derecha */
+.derecha:hover {
+  transform: scale(1.3);
+}
+
+/* Aumentar el tamaño al pasar el raton sobre el elemento con clase .izquierda */
+.izquierda:hover {
+  transform: scale(1.3);
+}
+
+/* Aumentar el tamaño al pasar el raton sobre el elemento con clase .imgmenu */
+.imgmenu:hover {
+  transform: scale(1.1);
+}
+
+/* Cambiar el fondo y el color del texto al pasar el raton sobre el elemento con clase .flecha */
+.flecha:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+/* Cambiar la opacidad y visibilidad al pasar el raton sobre el elemento .submenu o al enfocar el enlace principal */
+.enlace-principal:focus + .submenu,
+.submenu:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Cambiar el fondo y el color del texto al pasar el raton sobre el elemento .flecha-Lenguaje */
+.flecha-Lenguaje:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+/* Establecer el margen y quitar el subrayado del texto en los enlaces con clase .icono-social */
+.icono-social {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Cambiar el fondo y el color del texto al pasar el raton sobre el elemento con clase .flechas */
+.flechas:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+/* Cambiar el color del texto y escalar al pasar el raton sobre el elemento con clase .TitulosParrafos */
+.TitulosParrafos:hover {
+  color: #555;
+  transform: scale(1.02);
+}
+
+.submenu li a:hover{
+  transform: scale(1.05);
+  color:burlywood
+}

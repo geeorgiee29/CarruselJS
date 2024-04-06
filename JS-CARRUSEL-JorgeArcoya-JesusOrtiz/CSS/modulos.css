@@ -1,0 +1,322 @@
+/* Estilos para personalizar el carrusel de los lenguajes que manejo  en la pagina de servicios*/
+.carrusel-Lenguaje {
+    position: relative;
+    padding-bottom: 50px;
+    padding-left: 20%;
+  }
+  .carrusel-mover-Lenguaje {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: 60%;
+  }
+  .carrusel-abrir-Lenguaje:checked + .carrusel-objeto-Lenguaje {
+    position: static;
+    opacity: 100;
+  }
+  .carrusel-objeto-Lenguaje {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+  }
+  .carrusel-objeto-Lenguaje img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  .flecha-Lenguaje {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+  }
+  .flecha-Lenguaje.retroceder-Lenguaje {
+    left: 2%;
+  }
+  .flecha-Lenguaje.avanzar-Lenguaje {
+    right: 2%;
+  }
+  
+  #pagina-1-Lenguaje:checked ~ .pag-1-Lenguaje,
+  #pagina-2-Lenguaje:checked ~ .pag-2-Lenguaje,
+  #pagina-3-Lenguaje:checked ~ .pag-3-Lenguaje,
+  #pagina-4-Lenguaje:checked ~ .pag-4-Lenguaje,
+  #pagina-5-Lenguaje:checked ~ .pag-5-Lenguaje {
+    display: block;
+  }
+  .carrusel-circulos-Lenguaje {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+  }
+  .carrusel-circulos-Lenguaje li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .carrusel-circulo-Lenguaje {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+  }
+  
+  #pagina-1-Lenguaje:checked ~ .pag-1-Lenguaje ~ .carrusel-circulos-Lenguaje 
+     li:nth-child(1) .carrusel-circulo-Lenguaje,
+  #pagina-2-Lenguaje:checked ~ .pag-2-Lenguaje ~ .carrusel-circulos-Lenguaje 
+      li:nth-child(2) .carrusel-circulo-Lenguaje,
+  #pagina-3-Lenguaje:checked ~ .pag-3-Lenguaje ~ .carrusel-circulos-Lenguaje
+      li:nth-child(3) .carrusel-circulo-Lenguaje,
+  #pagina-4-Lenguaje:checked ~ .pag-4-Lenguaje ~ .carrusel-circulos-Lenguaje
+      li:nth-child(4) .carrusel-circulo-Lenguaje,
+  #pagina-5-Lenguaje:checked ~ .pag-5-Lenguaje ~ .carrusel-circulos-Lenguaje
+      li:nth-child(5) .carrusel-circulo-Lenguaje {
+    color: #428bca;
+  }
+  #titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+  }
+  
+    /* Estilos para personalizar los bordes de la imagenes de los logos en el carrusel de lenguajes que manejo */
+  .logo-Lenguaje{
+    padding-left: 390px;
+    padding-right: 390px;
+    padding-bottom: 10px;
+    background-color: #E7E7E7;
+  }
+
+
+/* Estilos para personalizar la barra de navegacion que hay en todas las páginas */
+.navbar {
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logonav {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    margin-right: 20px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+
+
+
+
+  
+
+
+/* Estilos para personalizar el submenu desplegable que hay en la página de servicios*/
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display:inline-block;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+  }
+  
+  .submenu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #333333;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .submenu li {
+    display: block;
+    margin: 0;
+  }
+  
+  .submenu a {
+    padding: 10px;
+    color: #fff;
+    display: block;
+  }
+    /* Estilos para personalizar el tamaño de la imagen del submenu desplegable de la pagina servicios */
+  .imgmenu{
+    width: 30px;
+    height: 30px;
+  }
+  
+
+
+/* Estilos para personalizar el carrusel de los proyectos que he realizado en la pagina de servicios */
+.carrusel {
+    position: relative;
+    padding-bottom: 150px;
+    padding-left: 20%;
+  }
+  .carrusel-mover {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: 60%;
+  }
+  .carrusel-abrir:checked + .carrusel-objeto {
+    position: static;
+    opacity: 100;
+  }
+  .carrusel-objeto {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+  }
+  .carrusel-objeto img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  .flecha {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+  }
+  .flecha.retroceder {
+    left: 2%;
+  }
+  .flecha.avanzar {
+    right: 2%;
+  }
+
+  #pagina-1:checked ~ .pag-1,
+  #pagina-2:checked ~ .pag-2,
+  #pagina-3:checked ~ .pag-3 {
+    display: block;
+  }
+  .carrusel-circulos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+  }
+  .carrusel-circulos li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .carrusel-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+  }
+  
+  #pagina-1:checked ~ .pag-1 ~ .carrusel-circulos 
+     li:nth-child(1) .carrusel-circulo,
+  #pagina-2:checked ~ .pag-2 ~ .carrusel-circulos 
+      li:nth-child(2) .carrusel-circulo,
+  #pagina-3:checked ~ .pag-3 ~ .carrusel-circulos 
+      li:nth-child(3) .carrusel-circulo {
+    color: #428bca;
+  }
+  #titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+  }
+  
+  /* Estilos para personalizar los bordes de la imagenes de los logos en el carrusel de proyectos que he realizado */
+  .logoProyecto{
+    padding-left: 390px;
+    padding-right: 390px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  /* Estilos para personalizar el tamaño, los bordes de las imagenes de las redes sociales en la pagina principal */
+  .icono-social img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+/* Estilos para personalizar la imagen de la pagina de empresa */
+.imgempresa{
+  float:right;
+  width: 35%;
+  height: 50%;
+  padding-top: 50px;
+  margin-right: 120px;
+}
