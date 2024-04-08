@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./CSS/carruselOpiniones.css">
     </head>
     <body class="principal">
-        <script src="./index.js"></script>
+        <script src="./index2.js"></script>
         <header>
         
             <nav class="navbar">
@@ -40,29 +40,29 @@
                 </div>
                 <div class="carruselOpiniones">
                     <div class="flechasCarrusel">
-                        <button class="flecha-Carrusel1">&#8249;</buttom>
+                        <button class="flecha-Carrusel1" onclick="cambiarOpinion(-1)">&#8249;</button>
                     </div>
-                    <div class="contenidoCarrusel1">  
+                    <div class="opinion" id="opinion1">  
                         <img src="./imagenes/fotoPersona.jpg" alt="Avatar de Laura García" class="autorFoto">
                         <p class="autorOpinion">Nuevo Nombre</p>
                         <p class="textoOpinion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed efficitur libero id ultricies et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <p class="opinionFecha">viernes, 5 de abril de 2024</p>
                     </div>
-                    <div class="contenidoCarrusel2">  
+                    <div class="opinion" id="opinion2">  
                         <img src="./imagenes/fotoPersona.jpg" alt="Avatar de Laura García" class="autorFoto">
-                        <p class="autorOpinion">Nuevo Nombre</p>
+                        <p class="autorOpinion">Nuevo Apellido</p>
                         <p class="textoOpinion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed efficitur libero id ultricies et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <p class="opinionFecha">viernes, 5 de abril de 2024</p>
                     </div>
-                    <div class="contenidoCarrusel3">  
+                    <div class="opinion" id="opinion3">  
                         <img src="./imagenes/fotoPersona.jpg" alt="Avatar de Laura García" class="autorFoto">
-                        <p class="autorOpinion">Nuevo Nombre</p>
+                        <p class="autorOpinion">Nuevo Nada</p>
                         <p class="textoOpinion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed efficitur libero id ultricies et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <p class="opinionFecha">viernes, 5 de abril de 2024</p>
                     </div>
                     
                         <div class="flechasCarrusel">
-                            <button class="flecha-Carrusel2">&#8250;</button>
+                            <button class="flecha-Carrusel2" onclick="cambiarOpinion(1)">&#8250;</button>
                         </div>
                 </div>
                 <button class="botonformulario"><img  class="fotoSuma" src="./imagenes/simboloSuma.jpg"></button>
