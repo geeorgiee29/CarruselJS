@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function cambiarOpinion(direccion) {
     // Obtiene todas las opiniones
-    var opiniones = document.getElementsByClassName("contenidoCarrusel");
+    var opiniones = document.getElementsByClassName("opinion");
     // Obtiene el índice de la opinión actual
     var indiceActual = 0;
     for (var i = 0; i < opiniones.length; i++) {
@@ -32,6 +32,24 @@ function cambiarOpinion(direccion) {
     // Muestra la siguiente opinión
     opiniones[siguienteIndice % opiniones.length].style.display = "flex";
 }
+
+// Función para iniciar el carrusel automático
+function iniciarCarruselAutomatico() {
+    temporizadorCarrusel = setInterval(function() {
+        cambiarOpinion(1);
+    }, 3000); // Cambia de opinión cada 3 segundos
+}
+
+// Función para detener el carrusel automático
+function detenerCarrusel() {
+    clearInterval(temporizadorCarrusel);
+}
+
+// Función para reiniciar el carrusel automático después de un clic
+function reiniciarCarrusel() {
+    iniciarCarruselAutomatico();
+}
+
 // Iniciar el carrusel automáticamente al cargar la página
 window.onload = function() {
     iniciarCarruselAutomatico();

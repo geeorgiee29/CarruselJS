@@ -34,7 +34,7 @@
 }
 
 
-.contenidoCarrusel {
+.opinion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,11 +143,11 @@
     background-color: #371f8f;
 }
 
-.dark-theme .contenidoCarrusel{
+.dark-theme .opinion{
     background-color: #332661;
 }
 
-.dark-theme #contenidoCarrusel--seleccionado{
+.dark-theme #opinion0{
     background-color: #332661;
 }
 
@@ -178,5 +178,5 @@
 
 
 #opinion0 {
-    display: block; /* Muestra solo la primera opinión al principio */
+    display: flex; /* Muestra solo la primera opinión al principio */
 }
