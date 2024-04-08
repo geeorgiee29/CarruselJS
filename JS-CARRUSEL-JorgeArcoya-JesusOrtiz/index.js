@@ -10,22 +10,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const retroceder = document.querySelector(".flecha-Carrusel1");
-    const avanzar = document.querySelector(".flecha-Carrusel2");
-    const flechas = document.querySelectorAll(".flechasCarrusel");
-
-    let indiceCarrusel = 0;
-
-    retroceder.addEventListener("click", () => {
-        flechas[indiceCarrusel].classList.remove("carousel__item--selected");
-        indiceCarrusel = (indiceCarrusel - 1 + flechas.length) % flechas.length;
-        flechas[indiceCarrusel].classList.add("carousel__item--selected");
-    });
-
-    avanzar.addEventListener("click", () => {
-        items[indiceCarrusel].classList.remove("carousel__item--selected");
-        indiceCarrusel = (indiceCarrusel + 1) % flechas.length;
-        items[indiceCarrusel].classList.add("carousel__item--selected");
-    });
-});
+function cambiarOpinion(direccion) {
+    // Obtiene todas las opiniones
+    var opiniones = document.getElementsByClassName("contenidoCarrusel");
+    // Obtiene el índice de la opinión actual
+    var indiceActual = 0;
+    for (var i = 0; i < opiniones.length; i++) {
+        if (opiniones[i].style.display !== "none") {
+            indiceActual = i;
+            break;
+        }
+    }
+    // Oculta la opinión actual
+    opiniones[indiceActual].style.display = "none";
+    // Calcula el índice de la siguiente opinión
+    var siguienteIndice = indiceActual + direccion;
+    // Verifica si el siguiente índice es negativo y ajusta si es necesario
+    if (siguienteIndice < 0) {
+        siguienteIndice = opiniones.length - 1;
+    }
+    // Muestra la siguiente opinión
+    opiniones[siguienteIndice % opiniones.length].style.display = "flex";
+}
