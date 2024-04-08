@@ -37,10 +37,3 @@
   }
 
 
-.opinion {
-   display: none; /* Oculta todas las opiniones por defecto */
-}
-
-.opinion:first-child {
-    display: block; /* Muestra solo la primera opinión al principio */
-}
