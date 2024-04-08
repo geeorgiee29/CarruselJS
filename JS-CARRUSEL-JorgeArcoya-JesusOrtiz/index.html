@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./CSS/carruselOpiniones.css">
     </head>
     <body class="principal">
-        <script src="./index2.js"></script>
+        <script src="./index.js"></script>
         <header>
         
             <nav class="navbar">
@@ -38,27 +38,28 @@
                 <div class="tituloCarrusel">
                     <h1>¿Qué opinan nuestros clientes?</h1>
                 </div>
-                <div class="carruselOpiniones" onmouseenter="detenerCarrusel()" onmouseleave="reiniciarCarrusel()">
+                <div class="carruselOpiniones">
                     <div class="flechasCarrusel">
-                        <button class="flecha-Carrusel1" onclick="cambiarOpinion(-1)">&#8249;</button>
+                        <button class="flecha-Carrusel1" onclick="cambiarOpinion(-1)">&#8249;</buttom>
                     </div>
-                    <div class="opinion" id="opinion0">  
-                        <img src="./imagenes/fotoPersona.jpg" alt="Avatar de Laura García" class="autorFoto">
-                        <p class="autorOpinion">Nuevo Nombre</p>
-                        <p class="textoOpinion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed efficitur libero id ultricies et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                    <div class="contenidoCarrusel" id="contenidoCarrusel--seleccionado"> 
+                        <img src="./imagenes/fotoPersona.jpg" alt="Avatar de Pedro Rodriguez" class="autorFoto">
+                        <p class="autorOpinion">Pedro Rodriguez</p>
+                        <p class="textoOpinion">La plataforma de programación Programming es increíblemente intuitiva y fácil de usar. Me encanta la variedad de herramientas y recursos que ofrece, lo que ha hecho que mi experiencia de aprendizaje sea muy gratificante. Recomiendo esta plataforma a cualquier persona que esté buscando mejorar sus habilidades de programación de forma efectiva y divertida./p>
+                        <p class="opinionFecha">sabado, 6 de abril de 2024</p>
+                    </div>
+                    <div class="contenidoCarrusel"> 
+                        <img src="./imagenes/persona2.jpg" alt="Avatar de Juan Lopez" class="autorFoto">
+                        <p class="autorOpinion">Juan Lopez</p>
+                        <p class="textoOpinion">He probado varios cursos en línea de programación, pero debo decir que el contenido de la plataforma Programming es simplemente excepcional. Los instructores son expertos en la materia y la forma en que presentan los conceptos complejos de manera clara y concisa es impresionante. Gracias a esta plataforma, he logrado avanzar significativamente en mi carrera como desarrollador. ¡No puedo recomendarla lo suficiente!</p>
                         <p class="opinionFecha">viernes, 5 de abril de 2024</p>
                     </div>
-                    <div class="opinion">  
-                        <img src="./imagenes/fotoPersona.jpg" alt="Avatar de Laura García" class="autorFoto">
-                        <p class="autorOpinion">Nuevo Apellido</p>
-                        <p class="textoOpinion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed efficitur libero id ultricies et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p class="opinionFecha">viernes, 5 de abril de 2024</p>
-                    </div>
-                    <div class="opinion">  
-                        <img src="./imagenes/fotoPersona.jpg" alt="Avatar de Laura García" class="autorFoto">
-                        <p class="autorOpinion">Nuevo Nada</p>
-                        <p class="textoOpinion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed efficitur libero id ultricies et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p class="opinionFecha">viernes, 5 de abril de 2024</p>
+                    <div class="contenidoCarrusel">  
+                        <img src="./imagenes/persona3.jpg" alt="Avatar de Maria García" class="autorFoto">
+                        <p class="autorOpinion">Maria Garcia</p>
+                        <p class="textoOpinion">La comunidad en torno a la plataforma Programming es simplemente asombrosa. La posibilidad de conectarse con otros desarrolladores, compartir conocimientos y colaborar en proyectos ha sido una experiencia enriquecedora. Además, la amplia gama de cursos y recursos disponibles me ha permitido expandir mis habilidades de programación de una manera que nunca pensé posible. Definitivamente, esta plataforma es un tesoro para cualquier entusiasta de la programación.</p>
+                        <p class="opinionFecha">jueves, 4 de abril de 2024</p>
                     </div>
                     
                         <div class="flechasCarrusel">
