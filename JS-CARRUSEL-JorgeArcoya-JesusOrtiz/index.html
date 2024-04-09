@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="./CSS/carruselOpiniones.css">
     </head>
     <body class="principal">
-        <script src="./index.js"></script>
         <header>
         
             <nav class="navbar">
@@ -23,7 +22,7 @@
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./HTML/servicio.html">Los servicios que ofrezco</a></li>
                     <li><a href="./HTML/empresa.html">Sobre mi empresa</a></li>
-                    <li><a target="_blank" href="https://apliweb2smr.blogspot.com"">Mi Blog</a></li>
+                    <li><a target="_blank" href="https://apliweb2smr.blogspot.com">Mi Blog</a></li>
                     <li><a href="./HTML/contactar.html">Contactame</a></li>
                 </ul>
             </nav>
@@ -38,37 +37,29 @@
                 <div class="tituloCarrusel">
                     <h1>¿Qué opinan nuestros clientes?</h1>
                 </div>
-                <div class="carruselOpiniones">
+                <div class="carruselOpiniones" onmouseenter="detenerCarrusel()" onmouseleave="reiniciarCarrusel()">
                     <div class="flechasCarrusel">
-                        <button class="flecha-Carrusel1" onclick="cambiarOpinion(-1)">&#8249;</buttom>
+                        <button class="flecha-Carrusel1" onclick="retroceder()">&#8249;</buttom>
                     </div>
-                    
-                    <div class="contenidoCarrusel" id="contenidoCarrusel--seleccionado"> 
-                        <img src="./imagenes/fotoPersona.jpg" alt="Avatar de Pedro Rodriguez" class="autorFoto">
-                        <p class="autorOpinion">Pedro Rodriguez</p>
-                        <p class="textoOpinion">La plataforma de programación Programming es increíblemente intuitiva y fácil de usar. Me encanta la variedad de herramientas y recursos que ofrece, lo que ha hecho que mi experiencia de aprendizaje sea muy gratificante. Recomiendo esta plataforma a cualquier persona que esté buscando mejorar sus habilidades de programación de forma efectiva y divertida./p>
-                        <p class="opinionFecha">sabado, 6 de abril de 2024</p>
-                    </div>
-                    <div class="contenidoCarrusel"> 
-                        <img src="./imagenes/persona2.jpg" alt="Avatar de Juan Lopez" class="autorFoto">
-                        <p class="autorOpinion">Juan Lopez</p>
-                        <p class="textoOpinion">He probado varios cursos en línea de programación, pero debo decir que el contenido de la plataforma Programming es simplemente excepcional. Los instructores son expertos en la materia y la forma en que presentan los conceptos complejos de manera clara y concisa es impresionante. Gracias a esta plataforma, he logrado avanzar significativamente en mi carrera como desarrollador. ¡No puedo recomendarla lo suficiente!</p>
-                        <p class="opinionFecha">viernes, 5 de abril de 2024</p>
-                    </div>
-                    <div class="contenidoCarrusel">  
-                        <img src="./imagenes/persona3.jpg" alt="Avatar de Maria García" class="autorFoto">
-                        <p class="autorOpinion">Maria Garcia</p>
-                        <p class="textoOpinion">La comunidad en torno a la plataforma Programming es simplemente asombrosa. La posibilidad de conectarse con otros desarrolladores, compartir conocimientos y colaborar en proyectos ha sido una experiencia enriquecedora. Además, la amplia gama de cursos y recursos disponibles me ha permitido expandir mis habilidades de programación de una manera que nunca pensé posible. Definitivamente, esta plataforma es un tesoro para cualquier entusiasta de la programación.</p>
-                        <p class="opinionFecha">jueves, 4 de abril de 2024</p>
-                    </div>
-                    
-                        <div class="flechasCarrusel">
-                            <button class="flecha-Carrusel2" onclick="cambiarOpinion(1)">&#8250;</button>
-                        </div>
-                </div>
-                <button class="botonformulario"><img  class="fotoSuma" src="./imagenes/simboloSuma.jpg"></button>
-            </div>
+                        
+                        <div id="opinion"></div>
 
+                    <div class="flechasCarrusel">
+                        <button class="flecha-Carrusel2" onclick="avanzar()">&#8250;</button>
+                    </div>
+                </div>
+                <div id="formulario">
+                    <form id="myForm">
+                        <input type="text" id="campo1" placeholder="Nombre">
+                        <input type="text" id="campo2" placeholder="Opinion">
+                        <div class="botonesMyForm">
+                            <button id="guardar">Guardar</button>
+                            <button id="cancelar">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+                <button class="botonformulario" onclick="mostrarFormulario()"><img  class="fotoSuma" src="./imagenes/simboloSuma.jpg"></button>
+            </div>
 
             <div class="redes-sociales">
                 <a href="https://www.instagram.com" class="icono-social"><img src="./imagenes/Instagram_logo_2016.svg.png" alt="Instagram"></a>
@@ -82,5 +73,6 @@
         <footer class="footer">
             <p>&copy; 2024 Programming - All rights reserved</p>
         </footer>
+        <script src="./index.js"></script>
     </body>
 </html>
